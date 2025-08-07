@@ -55,7 +55,7 @@ const ShareDashboardModal: React.FC<ShareDashboardModalProps> = ({
   return (
     <Modal
       onClose={onClose}
-      width="max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl"
+      width="max-w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl"
       height="auto"
     >
       <div
