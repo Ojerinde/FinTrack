@@ -63,11 +63,10 @@ const Sidebar: React.FC = () => {
                     }`}
                     aria-label={item.name}
                   >
-                    {item.icon}
                     <span>{item.name}</span>
                   </Link>
                 ) : (
-                  <div className="cursor-pointer flex justify-center py-2">
+                  <div className="cursor-pointer flex justify-start py-2">
                     <div
                       aria-hidden="true"
                       onClick={() => router.push(item.link)}
