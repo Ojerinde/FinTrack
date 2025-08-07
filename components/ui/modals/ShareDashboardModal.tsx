@@ -53,7 +53,11 @@ const ShareDashboardModal: React.FC<ShareDashboardModalProps> = ({
   ];
 
   return (
-    <Modal onClose={onClose} width="500px" height="auto">
+    <Modal
+      onClose={onClose}
+      width="max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl"
+      height="auto"
+    >
       <div
         role="dialog"
         aria-labelledby="share-modal-title"
