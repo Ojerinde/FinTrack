@@ -42,8 +42,7 @@ const TabNavigation: React.FC<TabNavigationProps> = ({
           >
             {tab.name}
             {tab.value.toLowerCase() === activeTab.toLowerCase() && (
-              // <div className="absolute -bottom-[1.6] left-0 w-full border-b-2 border-button-bg" />
-              <div className="absolute bottom-0 left-0 w-full border-b-2 border-button-bg" />
+              <div className="absolute -bottom-0.5 left-0 w-full border-b-2 border-button-bg" />
             )}
           </button>
         ))}
