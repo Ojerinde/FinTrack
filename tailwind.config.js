@@ -24,8 +24,6 @@ module.exports = {
         "success-color": "#10b981",
         "dot-color": "#087A2E",
         "error-color": "#C6381B",
-        "share-text": "#020303",
-        foreground: "#1b2528",
       },
       fontFamily: {
         sans: ["Public Sans", "sans-serif"],

@@ -6,10 +6,12 @@ import TabNavigation from "@/components/dashboard/TabNavigation";
 import SummaryCards from "@/components/dashboard/SummaryCards";
 import { mockDashboardSummary } from "@/store/data/mockData";
 import { ArrowDownIcon, OptionsIcon } from "@/public/icons/svg-components";
+import ShareDashboardModal from "@/components/ui/modals/ShareDashboardModal";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState<string>("overview");
   const [isActive, setIsActive] = useState<boolean>(true);
+  const [isShareModalOpen, setIsShareModalOpen] = useState<boolean>(false);
 
   const handleTabChange = useCallback((tab: string) => {
     setActiveTab(tab);
@@ -17,6 +19,14 @@ const Dashboard = () => {
 
   const toggleActiveStatus = useCallback(() => {
     setIsActive((prev) => !prev);
+  }, []);
+
+  const openShareModal = useCallback(() => {
+    setIsShareModalOpen(true);
+  }, []);
+
+  const closeShareModal = useCallback(() => {
+    setIsShareModalOpen(false);
   }, []);
 
   return (
@@ -59,6 +69,7 @@ const Dashboard = () => {
           role="toolbar"
         >
           <button
+            onClick={openShareModal}
             className="px-4 py-2 bg-[#4B8B9F] hover:bg-[#4b8c9fd9] text-deep-dark rounded-full transition-colors duration-200 font-medium"
             aria-label="Share dashboard"
           >
@@ -95,6 +106,8 @@ const Dashboard = () => {
           <TransactionTable />
         </div>
       )}
+
+      {isShareModalOpen && <ShareDashboardModal onClose={closeShareModal} />}
     </main>
   );
 };

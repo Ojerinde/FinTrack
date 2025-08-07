@@ -29,7 +29,6 @@ const Header: React.FC = () => {
         role="navigation"
       >
         <div className="max-sm:hidden">
-          {" "}
           {isOpen ? (
             <CloseIcon
               onClick={() => dispatch(toggleSidebar())}
@@ -79,7 +78,7 @@ const Header: React.FC = () => {
         <GridIcon className="cursor-pointer" aria-label="View grid" />
 
         <Image
-          src="/images/avatar-odd.svg"
+          src="/images/user-1.svg"
           alt="User Avatar"
           width={48}
           height={48}

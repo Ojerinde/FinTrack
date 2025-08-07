@@ -2,9 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { mockUsers } from "@/store/data/mockData";
 
-const oddAvatar = "/images/avatar-odd.svg";
-const evenAvatar = "/images/avatar-even.svg";
-
 const UserAvatars: React.FC = () => {
   const displayedUsers = mockUsers.slice(0, 4);
   const remainingCount = mockUsers.length - 3;
@@ -24,7 +21,7 @@ const UserAvatars: React.FC = () => {
         {displayedUsers.map((user, index) => (
           <Image
             key={index}
-            src={index % 2 === 0 ? evenAvatar : oddAvatar}
+            src={`/images/user-${index + 1}.svg`}
             alt={`${user.name} avatar`}
             width={40}
             height={40}
