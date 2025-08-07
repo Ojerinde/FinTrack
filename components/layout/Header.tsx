@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         {isOpen ? (
           <CloseIcon
             onClick={() => dispatch(toggleSidebar())}
-            className="cursor-pointer"
+            className="cursor-pointer lg:hidden"
             aria-label="Close sidebar"
             aria-expanded={isOpen}
             aria-controls="sidebar"
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         ) : (
           <HamburgerIcon
             onClick={() => dispatch(toggleSidebar())}
-            className="cursor-pointer"
+            className="cursor-pointer lg:hidden"
             aria-label="Open sidebar"
             aria-expanded={isOpen}
             aria-controls="sidebar"
