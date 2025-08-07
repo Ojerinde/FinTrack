@@ -1,17 +1,24 @@
-Project Implementation
+# Project Implementation
 
-The original design provided as reference:
-<img width="2144" height="1703" alt="Original design mockup" src="https://github.com/user-attachments/assets/63c53d5d-397f-461a-9274-e1ee0c64d7a3" />
+## The original design provided as reference:
+![Original design mockup](https://github.com/user-attachments/assets/63c53d5d-397f-461a-9274-e1ee0c64d7a3)
 
-Converted to Code
-Desktop - Sidebar Opened
+## Converted to Code
+
+### Desktop - Sidebar Opened
 Full sidebar expanded view showing navigation menu and content area:
-<img width="3807" height="1855" alt="Desktop view with sidebar opened" src="https://github.com/user-attachments/assets/ec2a6cde-49d4-433e-9ebb-7daddf000ab6" />
+![Desktop Sidebar Opened](https://github.com/user-attachments/assets/cd8200fb-3fd8-44a2-8521-fbab3c848a91)
 
-Desktop - Sidebar Closed
+### Desktop - Sidebar Closed
 Collapsed sidebar view with minimized navigation:
-<img width="3808" height="1835" alt="Desktop view with sidebar closed" src="https://github.com/user-attachments/assets/c016495f-fa9d-4559-94e4-26c77f391bbb" />
+![Desktop Sidebar Closed](https://github.com/user-attachments/assets/c76b72af-9bdc-4d71-9391-af8f048a0c36)
 
-Mobile - Responsive Design
+### Transactions
+![Transactions](https://github.com/user-attachments/assets/3dac9957-5172-48e3-9735-d8bb08996a88)
+
+### Share Modal
+![Share Modal](https://github.com/user-attachments/assets/7719a981-1300-4b93-b783-2ed50e8bbead)
+
+### Mobile - Responsive Design
 Mobile-optimized layout with responsive sidebar functionality:
-<img width="908" height="1445" alt="Mobile responsive view" src="https://github.com/user-attachments/assets/88f77069-4936-4f45-8b6f-fcdc72389feb" />
+![Mobile Responsive Design](https://github.com/user-attachments/assets/05ef2cba-6e15-4475-abb5-35b6f4924b1d)
