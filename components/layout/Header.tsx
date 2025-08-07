@@ -24,24 +24,30 @@ const Header: React.FC = () => {
 
   return (
     <header className="flex justify-between items-center py-6" role="banner">
-      <div className="flex items-center space-x-6" role="navigation">
-        {isOpen ? (
-          <CloseIcon
-            onClick={() => dispatch(toggleSidebar())}
-            className="cursor-pointer sm:hidden"
-            aria-label="Close sidebar"
-            aria-expanded={isOpen}
-            aria-controls="sidebar"
-          />
-        ) : (
-          <HamburgerIcon
-            onClick={() => dispatch(toggleSidebar())}
-            className="cursor-pointer sm:hidden"
-            aria-label="Open sidebar"
-            aria-expanded={isOpen}
-            aria-controls="sidebar"
-          />
-        )}
+      <div
+        className="flex items-center space-x-6 max-sm:space-x-0"
+        role="navigation"
+      >
+        <div className="max-sm:hidden">
+          {" "}
+          {isOpen ? (
+            <CloseIcon
+              onClick={() => dispatch(toggleSidebar())}
+              className="cursor-pointer "
+              aria-label="Close sidebar"
+              aria-expanded={isOpen}
+              aria-controls="sidebar"
+            />
+          ) : (
+            <HamburgerIcon
+              onClick={() => dispatch(toggleSidebar())}
+              className="cursor-pointer "
+              aria-label="Open sidebar"
+              aria-expanded={isOpen}
+              aria-controls="sidebar"
+            />
+          )}
+        </div>
 
         <Image
           src="/images/logo.svg"
